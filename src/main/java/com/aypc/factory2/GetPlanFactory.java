@@ -7,7 +7,7 @@ public class GetPlanFactory {
 		if(planType == null){
 			return null;
 		}
-		if(planType.equalsIgnoreCase("DOMESTICPLAN")) {
+		if(PlanType.DOMESTICPLAN.toString().equals(planType)) {
 			return new DomesticPlan();  
 		}
 		else if(planType.equalsIgnoreCase("COMMERCIALPLAN")){
@@ -18,4 +18,16 @@ public class GetPlanFactory {
 		}
 		return null;
 	}
+
+	public Plan getPlan(PlanType planType){
+		if (PlanType.DOMESTICPLAN.equals(planType)){
+			return new DomesticPlan();
+		} else if(PlanType.COMMERCIALPLAN.equals(planType)){
+			return new CommercialPlan();
+		} else if(PlanType.INSTITUTIONALPLAN.equals(planType)) {
+			return new InstitutionalPlan();
+		}
+		return null;
+	}
+
 }
