@@ -7,13 +7,13 @@ public class GetPlanFactory {
 		if(planType == null){
 			return null;
 		}
-		if(planType.equalsIgnoreCase("DOMESTICPLAN")) {
+		if("DOMESTICPLAN".equalsIgnoreCase(planType)) {
 			return new DomesticPlan();  
 		}
-		else if(planType.equalsIgnoreCase("COMMERCIALPLAN")){
+		else if("COMMERCIALPLAN".equalsIgnoreCase(planType)){
 			return new CommercialPlan();  
 		}
-		else if(planType.equalsIgnoreCase("INSTITUTIONALPLAN")) {
+		else if("INSTITUTIONALPLAN".equalsIgnoreCase(planType)) {
 			return new InstitutionalPlan();
 		}
 		return null;
