@@ -75,7 +75,7 @@
                             <!--<source>${maven.compiler.source}</source>
                             <target>${maven.compiler.target}</target>-->
                             <workingDirectory>${project.build.directory}</workingDirectory>
-                            <mainClass>com.aypc.prototype.PrototypeFactory</mainClass>
+                            <mainClass>com.aypc.creational.prototype.PrototypeFactory</mainClass>
                             <arguments>
                                 <argument>-classpath</argument>
                                 <argument>tom</argument>
@@ -105,7 +105,7 @@
                             <!--<source>${maven.compiler.source}</source>
                             <target>${maven.compiler.target}</target>-->
                             <workingDirectory>${project.build.directory}</workingDirectory>
-                            <mainClass>com.aypc.prototype1.PrototypeDemo</mainClass>
+                            <mainClass>com.aypc.creational.prototype1.PrototypeDemo</mainClass>
                             <arguments>
                                 <argument>-classpath</argument>
                                 <argument>tom</argument>
@@ -140,7 +140,7 @@
                             <!--<source>${maven.compiler.source}</source>
                             <target>${maven.compiler.target}</target>-->
                             <workingDirectory>${project.build.directory}</workingDirectory>
-                            <mainClass>com.aypc.strategy.StrategyDemo</mainClass>
+                            <mainClass>com.aypc.behavioral.strategy.StrategyDemo</mainClass>
                             <arguments>
                                 <argument>-classpath</argument>
                                 <argument>tom</argument>
@@ -170,7 +170,7 @@
                             <!--<source>${maven.compiler.source}</source>
                             <target>${maven.compiler.target}</target>-->
                             <workingDirectory>${project.build.directory}</workingDirectory>
-                            <mainClass>com.aypc.strategy1.StrategyDemo</mainClass>
+                            <mainClass>com.aypc.behavioral.strategy1.StrategyDemo</mainClass>
                             <arguments>
                                 <argument>-classpath</argument>
                                 <argument>tom</argument>
@@ -200,7 +200,7 @@
                             <!--<source>${maven.compiler.source}</source>
                             <target>${maven.compiler.target}</target>-->
                             <workingDirectory>${project.build.directory}</workingDirectory>
-                            <mainClass>com.aypc.adapter.AdapterDemo</mainClass>
+                            <mainClass>com.aypc.structural.adapter.AdapterDemo</mainClass>
                             <arguments>
                                 <argument>-classpath</argument>
                                 <argument>tom</argument>
@@ -230,7 +230,7 @@
                             <!--<source>${maven.compiler.source}</source>
                             <target>${maven.compiler.target}</target>-->
                             <workingDirectory>${project.build.directory}</workingDirectory>
-                            <mainClass>com.aypc.factory.FactoryDemo</mainClass>
+                            <mainClass>com.aypc.creational.factory.FactoryDemo</mainClass>
                             <arguments>
                                 <argument>-classpath</argument>
                                 <argument>tom.jpeg</argument>
@@ -260,7 +260,7 @@
                             <!--<source>${maven.compiler.source}</source>
                             <target>${maven.compiler.target}</target>-->
                             <workingDirectory>${project.build.directory}</workingDirectory>
-                            <mainClass>com.aypc.factory1.FactoryDemo</mainClass>
+                            <mainClass>com.aypc.creational.factory1.FactoryDemo</mainClass>
                             <arguments>
                                 <argument>-classpath</argument>
                                 <argument>tom.jpeg</argument>
@@ -290,7 +290,7 @@
                             <!--<source>${maven.compiler.source}</source>
                             <target>${maven.compiler.target}</target>-->
                             <workingDirectory>${project.build.directory}</workingDirectory>
-                            <mainClass>com.aypc.factory2.GenerateBill</mainClass>
+                            <mainClass>com.aypc.creational.factory2.GenerateBill</mainClass>
                             <arguments>
                                 <argument>-classpath</argument>
                                 <argument>tom.jpeg</argument>
@@ -320,7 +320,7 @@
                             <!--<source>${maven.compiler.source}</source>
                             <target>${maven.compiler.target}</target>-->
                             <workingDirectory>${project.build.directory}</workingDirectory>
-                            <mainClass>com.aypc.decorator.DecoratorDemo</mainClass>
+                            <mainClass>com.aypc.structural.decorator.DecoratorDemo</mainClass>
                             <arguments>
                                 <argument>-classpath</argument>
                                 <argument>tom.jpeg</argument>
@@ -350,7 +350,7 @@
                             <!--<source>${maven.compiler.source}</source>
                             <target>${maven.compiler.target}</target>-->
                             <workingDirectory>${project.build.directory}</workingDirectory>
-                            <mainClass>com.aypc.composite.CompositeDemo</mainClass>
+                            <mainClass>com.aypc.structural.composite.CompositeDemo</mainClass>
                             <arguments>
                                 <argument>-classpath</argument>
                                 <argument>tom.jpeg</argument>
@@ -380,7 +380,7 @@
                             <!--<source>${maven.compiler.source}</source>
                             <target>${maven.compiler.target}</target>-->
                             <workingDirectory>${project.build.directory}</workingDirectory>
-                            <mainClass>com.aypc.composite1.CompositeDemo</mainClass>
+                            <mainClass>com.aypc.structural.composite1.CompositeDemo</mainClass>
                             <arguments>
                                 <argument>-classpath</argument>
                                 <argument>tom.jpeg</argument>
@@ -410,7 +410,7 @@
                             <!--<source>${maven.compiler.source}</source>
                             <target>${maven.compiler.target}</target>-->
                             <workingDirectory>${project.build.directory}</workingDirectory>
-                            <mainClass>com.aypc.observer.ObserverDemo</mainClass>
+                            <mainClass>com.aypc.behavioral.observer.ObserverDemo</mainClass>
                             <arguments>
                                 <argument>15</argument>
                                 <argument>-classpath</argument>
@@ -440,7 +440,7 @@
                             <!--<source>${maven.compiler.source}</source>
                             <target>${maven.compiler.target}</target>-->
                             <workingDirectory>${project.build.directory}</workingDirectory>
-                            <mainClass>com.aypc.template.TemplateDemo</mainClass>
+                            <mainClass>com.aypc.behavioral.template.TemplateDemo</mainClass>
                             <arguments>
                                 <argument>-classpath</argument>
                                 <argument>tom.jpeg</argument>
@@ -470,7 +470,7 @@
                             <!--<source>${maven.compiler.source}</source>
                             <target>${maven.compiler.target}</target>-->
                             <workingDirectory>${project.build.directory}</workingDirectory>
-                            <mainClass>com.aypc.bridge.BridgeDemo</mainClass>
+                            <mainClass>com.aypc.structural.bridge.BridgeDemo</mainClass>
                             <arguments>
                                 <argument>-classpath</argument>
                                 <argument>tom.jpeg</argument>
@@ -500,7 +500,7 @@
                             <!--<source>${maven.compiler.source}</source>
                             <target>${maven.compiler.target}</target>-->
                             <workingDirectory>${project.build.directory}</workingDirectory>
-                            <mainClass>com.aypc.builder.BuilderDemo</mainClass>
+                            <mainClass>com.aypc.creational.builder.BuilderDemo</mainClass>
                             <arguments>
                                 <argument>JTable_Builder</argument>
                                 <argument>-classpath</argument>
@@ -531,7 +531,7 @@
                             <!--<source>${maven.compiler.source}</source>
                             <target>${maven.compiler.target}</target>-->
                             <workingDirectory>${project.build.directory}</workingDirectory>
-                            <mainClass>com.aypc.builder1.BuilderDemo</mainClass>
+                            <mainClass>com.aypc.creational.builder1.BuilderDemo</mainClass>
                             <arguments>
                                 <argument>JTable_Builder</argument>
                                 <argument>-classpath</argument>
@@ -562,7 +562,7 @@
                             <!--<source>${maven.compiler.source}</source>
                             <target>${maven.compiler.target}</target>-->
                             <workingDirectory>${project.build.directory}</workingDirectory>
-                            <mainClass>com.aypc.builder2.BuilderDemo</mainClass>
+                            <mainClass>com.aypc.creational.builder2.BuilderDemo</mainClass>
                             <arguments>
                                 <argument>JTable_Builder</argument>
                                 <argument>-classpath</argument>
@@ -593,7 +593,7 @@
                             <!--<source>${maven.compiler.source}</source>
                             <target>${maven.compiler.target}</target>-->
                             <workingDirectory>${project.build.directory}</workingDirectory>
-                            <mainClass>com.aypc.builder3.BuilderDemo</mainClass>
+                            <mainClass>com.aypc.creational.builder3.BuilderDemo</mainClass>
 							<arguments>
 								<argument>JTable_Builder</argument>
 								<argument>-classpath</argument>
@@ -624,7 +624,7 @@
                             <!--<source>${maven.compiler.source}</source>
                             <target>${maven.compiler.target}</target>-->
                             <workingDirectory>${project.build.directory}</workingDirectory>
-                            <mainClass>com.aypc.builder4.Demo</mainClass>
+                            <mainClass>com.aypc.creational.builder4.Demo</mainClass>
                             <arguments>
                                 <argument>JTable_Builder</argument>
                                 <argument>-classpath</argument>
@@ -655,7 +655,7 @@
                             <!--<source>${maven.compiler.source}</source>
                             <target>${maven.compiler.target}</target>-->
                             <workingDirectory>${project.build.directory}</workingDirectory>
-                            <mainClass>com.aypc.state.StateDemo</mainClass>
+                            <mainClass>com.aypc.behavioral.state.StateDemo</mainClass>
 							<arguments>
 								<argument>JTable_Builder</argument>
 								<argument>-classpath</argument>
@@ -686,7 +686,7 @@
                             <!--<source>${maven.compiler.source}</source>
                             <target>${maven.compiler.target}</target>-->
                             <workingDirectory>${project.build.directory}</workingDirectory>
-                            <mainClass>com.aypc.state1.StateDemo</mainClass>
+                            <mainClass>com.aypc.behavioral.state1.StateDemo</mainClass>
                             <arguments>
                                 <argument>JTable_Builder</argument>
                                 <argument>-classpath</argument>
@@ -717,7 +717,7 @@
                             <!--<source>${maven.compiler.source}</source>
                             <target>${maven.compiler.target}</target>-->
                             <workingDirectory>${project.build.directory}</workingDirectory>
-                            <mainClass>com.aypc.state2.StateDemo</mainClass>
+                            <mainClass>com.aypc.behavioral.state2.StateDemo</mainClass>
                             <arguments>
                                 <argument>JTable_Builder</argument>
                                 <argument>-classpath</argument>
@@ -748,7 +748,7 @@
                             <!--<source>${maven.compiler.source}</source>
                             <target>${maven.compiler.target}</target>-->
                             <workingDirectory>${project.build.directory}</workingDirectory>
-                            <mainClass>com.aypc.chain.ChainDemo</mainClass>
+                            <mainClass>com.aypc.behavioral.chain.ChainDemo</mainClass>
                             <arguments>
                                 <argument>JTable_Builder</argument>
                                 <argument>-classpath</argument>
@@ -779,7 +779,7 @@
                             <!--<source>${maven.compiler.source}</source>
                             <target>${maven.compiler.target}</target>-->
                             <workingDirectory>${project.build.directory}</workingDirectory>
-                            <mainClass>com.aypc.chain1.ChainDemo</mainClass>
+                            <mainClass>com.aypc.behavioral.chain1.ChainDemo</mainClass>
                             <arguments>
                                 <argument>JTable_Builder</argument>
                                 <argument>-classpath</argument>
@@ -810,7 +810,7 @@
                             <!--<source>${maven.compiler.source}</source>
                             <target>${maven.compiler.target}</target>-->
                             <workingDirectory>${project.build.directory}</workingDirectory>
-                            <mainClass>com.aypc.chain2.ChainDemo</mainClass>
+                            <mainClass>com.aypc.behavioral.chain2.ChainDemo</mainClass>
                             <arguments>
                                 <argument>JTable_Builder</argument>
                                 <argument>-classpath</argument>
@@ -841,7 +841,7 @@
                             <!--<source>${maven.compiler.source}</source>
                             <target>${maven.compiler.target}</target>-->
                             <workingDirectory>${project.build.directory}</workingDirectory>
-                            <mainClass>com.aypc.chainmethod.ChainMethodDemo</mainClass>
+                            <mainClass>com.aypc.behavioral.chainmethod.ChainMethodDemo</mainClass>
                             <arguments>
                                 <argument>JTable_Builder</argument>
                                 <argument>-classpath</argument>
@@ -872,7 +872,7 @@
                             <!--<source>${maven.compiler.source}</source>
                             <target>${maven.compiler.target}</target>-->
                             <workingDirectory>${project.build.directory}</workingDirectory>
-                            <mainClass>com.aypc.visitor.VisitorDemo</mainClass>
+                            <mainClass>com.aypc.behavioral.visitor.VisitorDemo</mainClass>
                             <arguments>
                                 <argument>JTable_Builder</argument>
                                 <argument>-classpath</argument>
@@ -903,7 +903,7 @@
                             <!--<source>${maven.compiler.source}</source>
                             <target>${maven.compiler.target}</target>-->
                             <workingDirectory>${project.build.directory}</workingDirectory>
-                            <mainClass>com.aypc.visitor1.VisitorDemo</mainClass>
+                            <mainClass>com.aypc.behavioral.visitor1.VisitorDemo</mainClass>
                             <arguments>
                                 <argument>JTable_Builder</argument>
                                 <argument>-classpath</argument>
@@ -934,7 +934,7 @@
                             <!--<source>${maven.compiler.source}</source>
                             <target>${maven.compiler.target}</target>-->
                             <workingDirectory>${project.build.directory}</workingDirectory>
-                            <mainClass>com.aypc.memento.MementoDemo</mainClass>
+                            <mainClass>com.aypc.behavioral.memento.MementoDemo</mainClass>
                             <arguments>
                                 <argument>JTable_Builder</argument>
                                 <argument>-classpath</argument>
@@ -965,7 +965,7 @@
                             <!--<source>${maven.compiler.source}</source>
                             <target>${maven.compiler.target}</target>-->
                             <workingDirectory>${project.build.directory}</workingDirectory>
-                            <mainClass>com.aypc.flyweight.FlyweightDemo</mainClass>
+                            <mainClass>com.aypc.structural.flyweight.FlyweightDemo</mainClass>
                             <arguments>
                                 <argument>JTable_Builder</argument>
                                 <argument>-classpath</argument>
@@ -996,7 +996,7 @@
                             <!--<source>${maven.compiler.source}</source>
                             <target>${maven.compiler.target}</target>-->
                             <workingDirectory>${project.build.directory}</workingDirectory>
-                            <mainClass>com.aypc.interpreter.InterpreterDemo</mainClass>
+                            <mainClass>com.aypc.behavioral.interpreter.InterpreterDemo</mainClass>
                             <arguments>
                                 <argument>JTable_Builder</argument>
                                 <argument>-classpath</argument>
@@ -1027,7 +1027,7 @@
                             <!--<source>${maven.compiler.source}</source>
                             <target>${maven.compiler.target}</target>-->
                             <workingDirectory>${project.build.directory}</workingDirectory>
-                            <mainClass>com.aypc.command.CommandDemo</mainClass>
+                            <mainClass>com.aypc.behavioral.command.CommandDemo</mainClass>
                             <arguments>
                                 <argument>JTable_Builder</argument>
                                 <argument>-classpath</argument>
@@ -1058,7 +1058,7 @@
                             <!--<source>${maven.compiler.source}</source>
                             <target>${maven.compiler.target}</target>-->
                             <workingDirectory>${project.build.directory}</workingDirectory>
-                            <mainClass>com.aypc.mediator.MediatorDemo</mainClass>
+                            <mainClass>com.aypc.behavioral.mediator.MediatorDemo</mainClass>
                             <arguments>
                                 <argument>JTable_Builder</argument>
                                 <argument>-classpath</argument>
@@ -1089,7 +1089,7 @@
                             <!--<source>${maven.compiler.source}</source>
                             <target>${maven.compiler.target}</target>-->
                             <workingDirectory>${project.build.directory}</workingDirectory>
-                            <mainClass>com.aypc.mediator1.MediatorDemo</mainClass>
+                            <mainClass>com.aypc.behavioral.mediator1.MediatorDemo</mainClass>
                             <arguments>
                                 <argument>JTable_Builder</argument>
                                 <argument>-classpath</argument>
@@ -1120,7 +1120,7 @@
                             <!--<source>${maven.compiler.source}</source>
                             <target>${maven.compiler.target}</target>-->
                             <workingDirectory>${project.build.directory}</workingDirectory>
-                            <mainClass>com.aypc.mediator2.MediatorDemo</mainClass>
+                            <mainClass>com.aypc.behavioral.mediator2.MediatorDemo</mainClass>
                             <arguments>
                                 <argument>JTable_Builder</argument>
                                 <argument>-classpath</argument>
@@ -1151,7 +1151,7 @@
                             <!--<source>${maven.compiler.source}</source>
                             <target>${maven.compiler.target}</target>-->
                             <workingDirectory>${project.build.directory}</workingDirectory>
-                            <mainClass>com.aypc.mediator3.MediatorDemo</mainClass>
+                            <mainClass>com.aypc.behavioral.mediator3.MediatorDemo</mainClass>
                             <arguments>
                                 <argument>JTable_Builder</argument>
                                 <argument>-classpath</argument>
@@ -1182,7 +1182,7 @@
                             <!--<source>${maven.compiler.source}</source>
                             <target>${maven.compiler.target}</target>-->
                             <workingDirectory>${project.build.directory}</workingDirectory>
-                            <mainClass>com.aypc.mediator4.MediatorDemo</mainClass>
+                            <mainClass>com.aypc.behavioral.mediator4.MediatorDemo</mainClass>
                             <arguments>
                                 <argument>JTable_Builder</argument>
                                 <argument>-classpath</argument>
@@ -1213,7 +1213,7 @@
                             <!--<source>${maven.compiler.source}</source>
                             <target>${maven.compiler.target}</target>-->
                             <workingDirectory>${project.build.directory}</workingDirectory>
-                            <mainClass>com.aypc.facade.FacadeDemo</mainClass>
+                            <mainClass>com.aypc.structural.facade.FacadeDemo</mainClass>
                             <arguments>
                                 <argument>JTable_Builder</argument>
                                 <argument>-classpath</argument>
@@ -1244,7 +1244,7 @@
                             <!--<source>${maven.compiler.source}</source>
                             <target>${maven.compiler.target}</target>-->
                             <workingDirectory>${project.build.directory}</workingDirectory>
-                            <mainClass>com.aypc.proxy.ProxyDemo</mainClass>
+                            <mainClass>com.aypc.structural.proxy.ProxyDemo</mainClass>
                             <arguments>
                                 <argument>second</argument>
                                 <argument>-classpath</argument>

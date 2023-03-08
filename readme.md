@@ -39,38 +39,41 @@ Mediator promotes loose coupling by keeping objects from referring to each other
 
 ----
 
- |       |        | Purpose                                    |
- | :--- | :--- | :--- | :--- | :--- |
- |       |        | Creational-- | Structural-- | Behavioral-- |
- | Scope-- | Class-- | Factory Method-- | Adapter-- | Interpreter-- |
- |       |        |                  |            | Template Method |
- |       | Object | Abstract Factory | Adapter    | Chain of Responsibility |
- |       |        | Builder          | Bridge     | Command |
- |       |        | Prototype        | Composite  | Iterator |
- |       |        | Singleton        | Decorator  | Mediator |
- |       |        |                  | Facade     | Memento |
- |       |        |                  | Flyweight  | Observer |
- |       |        |                  | Proxy      | Observer |
- |       |        |                  |            | State |
- |       |        |                  |            | Strategy |
- |       |        |                  |            | Visitor |
+  |      |      | Purpose                                    |
+  | :--- | :--- | :--- | :--- | :--- |
+  |      |      | Creational-- | Structural-- | Behavioral-- |
+  | Scope-- | Class-- | Factory Method-- | Adapter-- | Interpreter-- |
+  |      |        |                  |            | Template Method |
+  |      | Object | Abstract Factory | Adapter    | Chain of Responsibility |
+  |      |        | Builder          | Bridge     | Command |
+  |      |        | Prototype        | Composite  | Iterator |
+  |      |        | Singleton        | Decorator  | Mediator |
+  |      |        |                  | Facade     | Memento |
+  |      |        |                  | Flyweight  | Observer |
+  |      |        |                  | Proxy      | Observer |
+  |      |        |                  |            | State |
+  |      |        |                  |            | Strategy |
+  |      |        |                  |            | Visitor |
 
 ----
 
-~~~java
+```java
 package com.aypc.adapter;
 
+import com.aypc.structiural.adapter.*;
+import com.aypc.structural.adapter.*;
+
 public class AdapterDemo {
-    public static void main(String[] args) {
-        Shape[] shapes = {new RectangleAdapter(new Rectangle()), new LineAdapter(new Line())};
-        int x1 = 10, y1 = 20;
-        int x2 = 30, y2 = 60;
-        for (Shape shape : shapes) {
-            shape.draw(x1, y1, x2, y2);
-        }
+  public static void main(String[] args) {
+    Shape[] shapes = {new RectangleAdapter(new Rectangle()), new LineAdapter(new Line())};
+    int x1 = 10, y1 = 20;
+    int x2 = 30, y2 = 60;
+    for (Shape shape : shapes) {
+      shape.draw(x1, y1, x2, y2);
     }
+  }
 } 
-~~~
+```
 ----
 
 ### Abstract Factory Method ###
@@ -78,7 +81,7 @@ buttons: First product hierarchy
 
 buttons/Button.java
 
-~~~java
+```java
 /**
  * Abstract Factory assumes that you have several families of products,
  * structured into separate class hierarchies (Button/Checkbox). All products of
@@ -89,11 +92,11 @@ buttons/Button.java
 public interface Button {
     void paint();
 }
-~~~
+```
 
 buttons/MacOSButton.java
  
-~~~java
+```java
 /**
  * All products families have the same varieties (MacOS/Windows).
  *
@@ -106,11 +109,11 @@ public class MacOSButton implements Button {
         System.out.println("You have created MacOSButton.");
     }
 }
-~~~
+```
 
 buttons/WindowsButton.java
 
-~~~java
+```java
 /**
  * All products families have the same varieties (MacOS/Windows).
  *
@@ -123,24 +126,24 @@ public class WindowsButton implements Button {
         System.out.println("You have created WindowsButton.");
     }
 }
-~~~
+```
 
 checkboxes: Second product hierarchy
 
 checkboxes/Checkbox.java
 
-~~~java
+```java
 /**
  * Checkboxes is the second product family. It has the same variants as buttons.
  */
 public interface Checkbox {
     void paint();
 }
-~~~
+```
 
 checkboxes/MacOSCheckbox.java
 
-~~~java
+```java
 /**
  * All products families have the same varieties (MacOS/Windows).
  *
@@ -153,11 +156,11 @@ public class MacOSCheckbox implements Checkbox {
         System.out.println("You have created MacOSCheckbox.");
     }
 }
-~~~
+```
 
 checkboxes/WindowsCheckbox.java
 
-~~~java
+```java
 /**
  * All products families have the same varieties (MacOS/Windows).
  *
@@ -170,13 +173,13 @@ public class WindowsCheckbox implements Checkbox {
         System.out.println("You have created WindowsCheckbox.");
     }
 }
-~~~
+```
 
 factories
 
 factories/GUIFactory.java: Abstract factory
 
-~~~java
+```java
 /**
  * Abstract factory knows about all (abstract) product types.
  */
@@ -184,11 +187,11 @@ public interface GUIFactory {
     Button createButton();
     Checkbox createCheckbox();
 }
-~~~
+```
 
 factories/MacOSFactory.java: Concrete factory (macOS)
 
-~~~java
+```java
 /**
  * Each concrete factory extends basic factory and responsible for creating
  * products of a single variety.
@@ -205,11 +208,11 @@ public class MacOSFactory implements GUIFactory {
         return new MacOSCheckbox();
     }
 }
-~~~
+```
 
 factories/WindowsFactory.java: Concrete factory (Windows)
 
-~~~java
+```java
 /**
  * Each concrete factory extends basic factory and responsible for creating
  * products of a single variety.
@@ -226,13 +229,13 @@ public class WindowsFactory implements GUIFactory {
         return new WindowsCheckbox();
     }
 }
-~~~
+```
 
 app
 
 app/Application.java: Client code
 
-~~~java
+```java
 /**
  * Factory users don't care which concrete factory they use since they work with
  * factories and products through abstract interfaces.
@@ -251,11 +254,11 @@ public class Application {
         checkbox.paint();
     }
 }
-~~~
+```
 
 Demo.java: App configuration
 
-~~~java
+```java
 
 /**
  * Demo class. Everything comes together here.
@@ -286,7 +289,7 @@ public class Demo {
         app.paint();
     }
 }
-~~~
+```
 
 ----
 
@@ -294,7 +297,7 @@ public class Demo {
 
 buttons: Common product interface
 
-~~~java
+```java
 /**
  * Common interface for all buttons.
  */
@@ -302,11 +305,11 @@ public interface Button {
     void render();
     void onClick();
 }
-~~~
+```
 
 buttons: Concrete product
 
-~~~java
+```java
 /**
  * HTML button implementation.
  */
@@ -321,11 +324,11 @@ public class HtmlButton implements Button {
         System.out.println("Click! Button says - 'Hello World!'");
     }
 }
-~~~
+```
 
 buttons: One more concrete product
 
-~~~java
+```java
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -367,11 +370,11 @@ public class WindowsButton implements Button {
         });
     }
 }
-~~~
+```
 
 factory: Base creator
 
-~~~java
+```java
 /**
  * Base factory class. Note that "factory" is merely a role for the class. It
  * should have some core business logic which needs different products to be
@@ -392,11 +395,11 @@ public abstract class Dialog {
      */
     public abstract Button createButton();
 }
-~~~
+```
 
 factory: Concrete creator
 
-~~~java
+```java
 /**
  * HTML Dialog will produce HTML buttons.
  */
@@ -407,11 +410,11 @@ public class HtmlDialog extends Dialog {
         return new HtmlButton();
     }
 }
-~~~
+```
 
 factory: One more concrete creator
 
-~~~java
+```java
 /**
  * Windows Dialog will produce Windows buttons.
  */
@@ -422,11 +425,11 @@ public class WindowsDialog extends Dialog {
         return new WindowsButton();
     }
 }
-~~~
+```
 
 Client code
 
-~~~java
+```java
 /**
  * Demo class. Everything comes together here.
  */
@@ -459,14 +462,14 @@ public class Demo {
         dialog.renderWindow();
     }
 }
-~~~
+```
 ----
 
 ### Builder ###
 
 builders/Builder.java: Common builder interface
 
-~~~java
+```java
 /**
  * Builder interface defines all possible ways to configure a product.
  */
@@ -478,11 +481,11 @@ public interface Builder {
     void setTripComputer(TripComputer tripComputer);
     void setGPSNavigator(GPSNavigator gpsNavigator);
 }
-~~~
+```
 
 builders/CarBuilder.java: Builder of car
 
-~~~java
+```java
 /**
  * Concrete builders implement steps defined in the common interface.
  */
@@ -528,11 +531,11 @@ public class CarBuilder implements Builder {
         return new Car(type, seats, engine, transmission, tripComputer, gpsNavigator);
     }
 }
-~~~
+```
 
 cars/Car.java: Car product
 
-~~~java
+```java
 /**
  * Car is a product class.
  */
@@ -588,11 +591,11 @@ public class Car {
         return gpsNavigator;
     }
 }
-~~~
+```
 
 cars/Manual.java: Manual product
 
-~~~java
+```java
 /**
  * Car manual is another product. Note that it does not have the same ancestor
  * as a Car. They are not related.
@@ -634,23 +637,23 @@ public class Manual {
         return info;
     }
 }
-~~~
+```
 
 cars/Type.java
 
-~~~java
+```java
 package refactoring_guru.builder.example.cars;
 
 public enum Type {
     CITY_CAR, SPORTS_CAR, SUV
 }
-~~~
+```
 
 *components*
 
 components/Engine.java: Product feature 1
 
-~~~java
+```java
 /**
  * Just another feature of a car.
  */
@@ -692,11 +695,11 @@ public class Engine {
         return mileage;
     }
 }
-~~~
+```
 
 components/GPSNavigator.java: Product feature 2
 
-~~~java
+```java
 /**
  * Just another feature of a car.
  */
@@ -715,22 +718,22 @@ public class GPSNavigator {
         return route;
     }
 }
-~~~
+```
 
 components/Transmission.java: Product feature 3
 
-~~~java
+```java
 /**
  * Just another feature of a car.
  */
 public enum Transmission {
     SINGLE_SPEED, MANUAL, AUTOMATIC, SEMI_AUTOMATIC
 }
-~~~
+```
 
 components/TripComputer.java: Product feature 4
 
-~~~java
+```java
 /**
  * Just another feature of a car.
  */
@@ -754,13 +757,13 @@ public class TripComputer {
         }
     }
 }
-~~~
+```
 
 *director*
 
 director/Director.java: Director controls builders
 
-~~~java
+```java
 /**
  * Director defines the order of building steps. It works with a builder object
  * through common Builder interface. Therefore it may not know what product is
@@ -794,11 +797,11 @@ public class Director {
         builder.setGPSNavigator(new GPSNavigator());
     }
 }
-~~~
+```
 
 Demo.java: Client code
 
-~~~java
+```java
 /**
  * Demo class. Everything comes together here.
  */
@@ -829,7 +832,7 @@ public class Demo {
     }
 
 }
-~~~
+```
 
 ----
 
