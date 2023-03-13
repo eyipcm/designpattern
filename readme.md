@@ -39,20 +39,20 @@ Mediator promotes loose coupling by keeping objects from referring to each other
 
 ----
 
-|&nbsp;|&nbsp;| Creational | Structural | Behavioral |
-|:---|:---| :---| :---|:---|
-|Scope | Class| Factory Method| Adapter| Interpreter |
-|&nbsp;|&nbsp;|&nbsp;|&nbsp;| Template Method |
-|&nbsp;| Object | Abstract Factory | Adapter     | Chain of Responsibility
-|      |        | Builder          | Bridge     | Command |
-|      |        | Prototype        | Composite  | Iterator |
-|      |        | Singleton        | Decorator  | Mediator |
-|      |        |                  | Facade     | Memento |
-|      |        |                  | Flyweight  | Observer |
-|      |        |                  | Proxy      | Observer |
-|      |        |                  |            | State |
-|      |        |                  |            | Strategy |
-|      |        |                  |            | Visitor |
+|&nbsp;|&nbsp;| Creational | Structural | Behavioral|
+|:---|:---|:---|:---|:---|
+|Scope |Class|Factory Method|Adapter|Interpreter|
+|&nbsp;|&nbsp;|&nbsp;|&nbsp;| Template Method|
+|&nbsp;| Object | Abstract Factory | Adapter     | Chain of Responsibility|
+|      |        | Builder          | Bridge     | Command|
+|      |        | Prototype        | Composite  | Iterator|
+|      |        | Singleton        | Decorator  | Mediator|
+|      |        |                  | Facade     | Memento|
+|      |        |                  | Flyweight  | Observer|
+|      |        |                  | Proxy      | Observer|
+|      |        |                  |            | State|
+|      |        |                  |            | Strategy|
+|      |        |                  |            | Visitor|
 
 ----
 
@@ -76,7 +76,7 @@ public class AdapterDemo {
 ----
 
 ### Abstract Factory Method ###
-buttons: First product hierarchy
+buttons: First __product hierarchy__
 
 buttons/Button.java
 
@@ -127,7 +127,7 @@ public class WindowsButton implements Button {
 }
 ```
 
-checkboxes: Second product hierarchy
+checkboxes: Second __product hierarchy__
 
 checkboxes/Checkbox.java
 

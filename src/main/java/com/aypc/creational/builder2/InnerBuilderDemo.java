@@ -4,7 +4,7 @@ import java.util.Arrays;
 /*
  * https://www.mkyong.com/design-pattern/java-builder-design-pattern-example/
  * */
-public class BuilderDemo {
+public class InnerBuilderDemo {
     public static void main(String[] args) {
 
         Student s = new Student.Builder()
