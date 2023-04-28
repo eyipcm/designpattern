@@ -17,7 +17,7 @@ public class ContentProvider {
     }
 
     public Message createMessage( MessageBuilder messageBuilder, String sender, String recipient,String message) {
-        messageBuilder.constructMessage();
+        messageBuilder.createMessage();
         messageBuilder.constructSender(sender);
         messageBuilder.constructRecipient(recipient);
         messageBuilder.constructMessageHeader();

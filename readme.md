@@ -1,6 +1,8 @@
 # [Design pattern](https://refactoring.guru/design-patterns/java)
 
 ## [Creation pattern](https://refactoring.guru/design-patterns/creational-patterns)
+
+Creational design patterns provide various object creation mechanisms, which increase flexibility and reuse of existing code.
 	
  1.	Abstract Factory Method - Provide an interface for creating families of related or dependent objects without specifying their concrete classes.
  2.	Factory Method - Define an interface for creating an object, but let subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.
@@ -11,6 +13,8 @@
 ----
 
 ## [Structural pattern](https://refactoring.guru/design-patterns/structural-patterns)
+
+Structural design patterns explain how to assemble objects and classes into larger structures, while keeping these structures flexible and efficient
 
  1.	Adapter - Convert the interface of a class into another interface clients expect. Adapter lets classes work together that couldn't otherwise because of incompatible interfaces.
  2.	Bridge - Decouple an abstraction from its implementation so that the two can vary independently.
@@ -23,6 +27,8 @@
 ----
 
 ## [Behavioral pattern](https://refactoring.guru/design-patterns/behavioral-patterns)
+
+Behavioral design patterns are concerned with algorithms and the assignment of responsibilities between objects.
 
  1.	Chain of Responsibility - Avoid coupling the sender of a request to its receiver by giving more than one object a chance to handle the request. Chain the receiving objects and pass the request along the chain until an object handles it.
  2.	Command - Encapsulate a request as an object, thereby letting you parameterize clients with different requests, queue or log requests, and support undoable operations.
