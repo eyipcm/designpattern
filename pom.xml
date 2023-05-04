@@ -11,6 +11,12 @@
             <version>${testng.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <optional>true</optional>
+        </dependency>
     </dependencies>
     <build>
         <sourceDirectory>src/main/java</sourceDirectory>
@@ -1257,6 +1263,37 @@
                 </plugins>
             </build>
         </profile>
+        <profile>
+            <id>abstractFactory</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>${maven-surefire-plugin.version}</version>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>exec-maven-plugin</artifactId>
+                        <version>${exec-maven-plugin.version}</version>
+                        <configuration>
+                            <executable>java</executable>
+                            <!--<source>${maven.compiler.source}</source>
+                            <target>${maven.compiler.target}</target>-->
+                            <workingDirectory>${project.build.directory}</workingDirectory>
+                            <mainClass>com.aypc.creational.abstractfactory.PatternDriver</mainClass>
+                            <arguments>
+                                <argument>second</argument>
+                                <argument>-classpath</argument>
+                                <argument>second</argument>
+                                <argument>dick.jpeg</argument>
+                                <argument>jack</argument>
+                            </arguments>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
     </profiles>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -1271,5 +1308,6 @@
         <maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>
         <exec-maven-plugin.version>3.0.0</exec-maven-plugin.version>
         <maven-surefire-plugin.version>3.0.0-M5</maven-surefire-plugin.version>
+        <lombok.version>1.18.26</lombok.version>
     </properties>
 </project>

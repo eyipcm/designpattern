@@ -2,10 +2,12 @@ package com.aypc.structural.composite;
 
 import java.util.ArrayList;
 
+
+//Composite
 //Directory implements the "lowest common denominator"
 public class Directory implements AbstractFile {
+	private ArrayList includedFiles = new ArrayList();   // Container has leaves or other containers
 	private String name;
-	private ArrayList includedFiles = new ArrayList();
 
 	public Directory(String name) {
 		this.name = name;

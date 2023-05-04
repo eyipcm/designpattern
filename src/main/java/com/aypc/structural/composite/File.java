@@ -1,5 +1,6 @@
 package com.aypc.structural.composite;
 
+//Leaf
 //File implements the "lowest common denominator"
 public class File implements AbstractFile {
 	private String name;

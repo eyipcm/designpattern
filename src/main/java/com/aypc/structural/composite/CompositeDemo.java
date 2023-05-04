@@ -65,10 +65,10 @@ public class CompositeDemo {
     }
 }
 */
- 
- 
 
 
+
+//client
 public class CompositeDemo {
 	public static StringBuffer compositeBuilder = new StringBuffer();
 
