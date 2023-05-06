@@ -16,10 +16,10 @@ Creational design patterns provide various object creation mechanisms, which inc
 
 Structural design patterns explain how to assemble objects and classes into larger structures, while keeping these structures flexible and efficient
 
- 1.	<i><u>Adapter</i></u> - Convert the interface of a class into another interface clients expect. Adapter lets classes work together that couldn't otherwise because of incompatible interfaces.
+ 1.	<u><i>Adapter</i></u> - Convert the interface of a class into another interface clients expect. Adapter lets classes work together that couldn't otherwise because of incompatible interfaces.
  2.	Bridge - Decouple an abstraction from its implementation so that the two can vary independently.
- 3.	<i><u>Composite</i></u> - Compose objects into tree structures to represent part-whole hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly.
- 4.	<i><u>Decorator</i></u> - Attach additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.
+ 3.	<u><i>Composite</i></u> - Compose objects into tree structures to represent part-whole hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly.
+ 4.	<u><i>Decorator</i></u> - Attach additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.
  5.	Facade - Provide a unified interface to a set of interfaces in a subsystem. FaÃ§ade defines a higher-level interface that makes the subsystem easier to use.
  6.	Flyweight - Use sharing to support large numbers of fine-grained objects efficiently.
  7.	Proxy - Provide a surrogate (n. 代理人)  or placeholder for another object to control access to it.
@@ -37,10 +37,10 @@ Behavioral design patterns are concerned with algorithms and the assignment of r
  5.	Mediator (n. 調解人) - Define an object that encapsulates how a set of objects interact.
 Mediator promotes loose coupling by keeping objects from referring to each other explicitly, and it lets you vary their interaction independently.
  6.	Memento (n. 紀念品/令人回憶的東西) - Without violating encapsulation, capture and externalize an object's internal state so that the object can be restored to this state later.
- 7.	<i><u>Observer</i></u> - Define a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
+ 7.	<u><i>Observer</i></u> - Define a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
  8.	State - Allow an object to alter its behavior when its internal state changes. The object will appear to change its class.
- 9.	<i><u>Strategy</i></u> - Define a family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
- 10. <i><u>Template Method</i></u> - Define the skeleton of an algorithm in an operation, deferring some steps to subclasses. Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithm's structure.
+ 9.	<u><i>Strategy</i></u> - Define a family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
+ 10. <u><i>Template Method</i></u> - Define the skeleton of an algorithm in an operation, deferring some steps to subclasses. Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithm's structure.
  11. Visitor - Represent an operation to be performed on the elements of an object structure. Visitor lets you define a new operation without changing the classes of the elements on which it operates.
 
 ----
