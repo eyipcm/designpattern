@@ -1298,11 +1298,11 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
         <log4j2.version>2.17.1</log4j2.version>
+        <testng.version>6.9.8</testng.version>
         <hibernate.version>5.1.0.Final</hibernate.version>
         <poi.version>3.16</poi.version>
-        <testng.version>6.9.8</testng.version>
         <mockito.version>2.2.28</mockito.version>
         <jasypt.version>1.9.2</jasypt.version>
         <maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>
