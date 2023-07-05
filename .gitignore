@@ -22,6 +22,9 @@ mvnw*
 *.iws
 *.iml
 *.ipr
+.gradle
+gradle
+gradlew*
 
 ### NetBeans ###
 /nbproject/private/

@@ -1,5 +1,6 @@
 package com.aypc.structural.adapter;
 
+// wrapper
 public class AdapterDemo {
     public static void main(String[] args) {
         Shape[] shapes = {new RectangleAdapter(new Rectangle()),
