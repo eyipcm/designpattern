@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.aypc</groupId>
     <artifactId>designpattern</artifactId>
@@ -15,7 +16,22 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>${lombok.version}</version>
-            <optional>true</optional>
+            <!--<optional>true</optional>-->
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>${log4j2.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${log4j2.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-1.2-api</artifactId>
+            <version>${log4j2.version}</version>
         </dependency>
     </dependencies>
     <build>
@@ -600,13 +616,13 @@
                             <target>${maven.compiler.target}</target>-->
                             <workingDirectory>${project.build.directory}</workingDirectory>
                             <mainClass>com.aypc.creational.builder3.BuilderDemo</mainClass>
-							<arguments>
-								<argument>JTable_Builder</argument>
-								<argument>-classpath</argument>
-								<argument>tom.jpeg</argument>
-								<argument>dick.jpeg</argument>
-								<argument>jack</argument>
-							</arguments>
+                            <arguments>
+                                <argument>JTable_Builder</argument>
+                                <argument>-classpath</argument>
+                                <argument>tom.jpeg</argument>
+                                <argument>dick.jpeg</argument>
+                                <argument>jack</argument>
+                            </arguments>
                         </configuration>
                     </plugin>
                 </plugins>
@@ -662,13 +678,13 @@
                             <target>${maven.compiler.target}</target>-->
                             <workingDirectory>${project.build.directory}</workingDirectory>
                             <mainClass>com.aypc.behavioral.state.StateDemo</mainClass>
-							<arguments>
-								<argument>JTable_Builder</argument>
-								<argument>-classpath</argument>
-								<argument>tom.jpeg</argument>
-								<argument>dick.jpeg</argument>
-								<argument>jack</argument>
-							</arguments>
+                            <arguments>
+                                <argument>JTable_Builder</argument>
+                                <argument>-classpath</argument>
+                                <argument>tom.jpeg</argument>
+                                <argument>dick.jpeg</argument>
+                                <argument>jack</argument>
+                            </arguments>
                         </configuration>
                     </plugin>
                 </plugins>
@@ -1299,7 +1315,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
-        <log4j2.version>2.17.1</log4j2.version>
+        <log4j2.version>2.20.0</log4j2.version>
         <testng.version>6.9.8</testng.version>
         <hibernate.version>5.1.0.Final</hibernate.version>
         <poi.version>3.16</poi.version>

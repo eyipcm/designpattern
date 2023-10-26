@@ -2,46 +2,69 @@
 
 ## [Creation pattern](https://refactoring.guru/design-patterns/creational-patterns)
 
-Creational design patterns provide various object creation mechanisms, which increase flexibility and reuse of existing code.
-	
- 1.	<i><u>Abstract Factory Method</u></i> - Provide an interface for creating families of related or dependent objects without specifying their concrete classes.
- 2.	<i><u>Factory Method</u></i> - Define an interface for creating an object, but let subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.
- 3.	Builder - Separate the construction of a complex object from its representation so that the same construction process can create different representations. 
- 4.	Prototype - Specify the kinds of objects to create using a prototypical instance, and create new objects by copying this prototype.
- 5.	Singleton - Ensure a class only has one instance, and provide a global point of access to it.
- 
+Creational design patterns provide various object creation mechanisms, which increase flexibility and reuse of existing
+code.
+
+1. <i><u>Abstract Factory Method</u></i> - Provide an interface for creating families of related or dependent objects
+   without specifying their concrete classes.
+2. <i><u>Factory Method</u></i> - Define an interface for creating an object, but let subclasses decide which class to
+   instantiate. Factory Method lets a class defer instantiation to subclasses.
+3. Builder - Separate the construction of a complex object from its representation so that the same construction process
+   can create different representations.
+4. Prototype - Specify the kinds of objects to create using a prototypical instance, and create new objects by copying
+   this prototype.
+5. Singleton - Ensure a class only has one instance, and provide a global point of access to it.
+
 ----
 
 ## [Structural pattern](https://refactoring.guru/design-patterns/structural-patterns)
 
-Structural design patterns explain how to assemble objects and classes into larger structures, while keeping these structures flexible and efficient
+Structural design patterns explain how to assemble objects and classes into larger structures, while keeping these
+structures flexible and efficient
 
- 1.	<u><i>Adapter</i></u> - Convert the interface of a class into another interface clients expect. Adapter lets classes work together that couldn't otherwise because of incompatible interfaces.
- 2.	Bridge - Decouple an abstraction from its implementation so that the two can vary independently.
- 3.	<u><i>Composite</i></u> - Compose objects into tree structures to represent part-whole hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly.
- 4.	<u><i>Decorator</i></u> - Attach additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.
- 5.	Facade - Provide a unified interface to a set of interfaces in a subsystem. FaÃ§ade defines a higher-level interface that makes the subsystem easier to use.
- 6.	Flyweight - Use sharing to support large numbers of fine-grained objects efficiently.
- 7.	Proxy - Provide a surrogate (n. 代理人)  or placeholder for another object to control access to it.
- 
+1. <u><i>Adapter</i></u> - Convert the interface of a class into another interface clients expect. Adapter lets classes
+   work together that couldn't otherwise because of incompatible interfaces.
+2. Bridge - Decouple an abstraction from its implementation so that the two can vary independently.
+3. <u><i>Composite</i></u> - Compose objects into tree structures to represent part-whole hierarchies. Composite lets
+   clients treat individual objects and compositions of objects uniformly.
+4. <u><i>Decorator</i></u> - Attach additional responsibilities to an object dynamically. Decorators provide a flexible
+   alternative to subclassing for extending functionality.
+5. Facade - Provide a unified interface to a set of interfaces in a subsystem. FaÃ§ade defines a higher-level interface
+   that makes the subsystem easier to use.
+6. Flyweight - Use sharing to support large numbers of fine-grained objects efficiently.
+7. Proxy - Provide a surrogate (n. 代理人)  or placeholder for another object to control access to it.
+
 ----
 
 ## [Behavioral pattern](https://refactoring.guru/design-patterns/behavioral-patterns)
 
 Behavioral design patterns are concerned with algorithms and the assignment of responsibilities between objects.
 
- 1.	Chain of Responsibility - Avoid coupling the sender of a request to its receiver by giving more than one object a chance to handle the request. Chain the receiving objects and pass the request along the chain until an object handles it.
- 2.	Command - Encapsulate a request as an object, thereby letting you parameterize clients with different requests, queue or log requests, and support undoable operations.
- 3.	Interpreter - Given a language, define a representation for its grammar along with an interpreter that uses the representation to interpret sentences in the language.
- 4.	Iterator - Provide a way to access the elements of an aggregate object sequentially without exposing its underlying representation.
- 5.	Mediator (n. 調解人) - Define an object that encapsulates how a set of objects interact.
-Mediator promotes loose coupling by keeping objects from referring to each other explicitly, and it lets you vary their interaction independently.
- 6.	Memento (n. 紀念品/令人回憶的東西) - Without violating encapsulation, capture and externalize an object's internal state so that the object can be restored to this state later.
- 7.	<u><i>Observer</i></u> - Define a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
- 8.	State - Allow an object to alter its behavior when its internal state changes. The object will appear to change its class.
- 9.	<u><i>Strategy</i></u> - Define a family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
- 10. <u><i>Template Method</i></u> - Define the skeleton of an algorithm in an operation, deferring some steps to subclasses. Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithm's structure.
- 11. Visitor - Represent an operation to be performed on the elements of an object structure. Visitor lets you define a new operation without changing the classes of the elements on which it operates.
+1. Chain of Responsibility - Avoid coupling the sender of a request to its receiver by giving more than one object a
+   chance to handle the request. Chain the receiving objects and pass the request along the chain until an object
+   handles it.
+2. Command - Encapsulate a request as an object, thereby letting you parameterize clients with different requests, queue
+   or log requests, and support undoable operations.
+3. Interpreter - Given a language, define a representation for its grammar along with an interpreter that uses the
+   representation to interpret sentences in the language.
+4. Iterator - Provide a way to access the elements of an aggregate object sequentially without exposing its underlying
+   representation.
+5. Mediator (n. 調解人) - Define an object that encapsulates how a set of objects interact.
+   Mediator promotes loose coupling by keeping objects from referring to each other explicitly, and it lets you vary
+   their interaction independently.
+6. Memento (n. 紀念品/令人回憶的東西) - Without violating encapsulation, capture and externalize an object's internal state so
+   that the object can be restored to this state later.
+7. <u><i>Observer</i></u> - Define a one-to-many dependency between objects so that when one object changes state, all
+   its dependents are notified and updated automatically.
+8. State - Allow an object to alter its behavior when its internal state changes. The object will appear to change its
+   class.
+9. <u><i>Strategy</i></u> - Define a family of algorithms, encapsulate each one, and make them interchangeable. Strategy
+   lets the algorithm vary independently from clients that use it.
+10. <u><i>Template Method</i></u> - Define the skeleton of an algorithm in an operation, deferring some steps to
+    subclasses. Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithm's
+    structure.
+11. Visitor - Represent an operation to be performed on the elements of an object structure. Visitor lets you define a
+    new operation without changing the classes of the elements on which it operates.
 
 ----
 
@@ -61,16 +84,18 @@ Mediator promotes loose coupling by keeping objects from referring to each other
 |      |        |                  |            | Visitor|
 
 ----
-### Commonly Used Pattern 
+
+### Commonly Used Pattern
 
 Abstract Factory (page 87)
-Adapter (139)
-Composite (163)
-Decorator (175)
-Factory Method (107)
-Observer (293)
-Strategy (315)
-Template Method (325)
+
++ Adapter (139)
++ Composite (163)
++ Decorator (175)
++ Factory Method (107)
++ Observer (293)
++ Strategy (315)
++ Template Method (325)
 
 ----
 
@@ -81,19 +106,21 @@ import com.aypc.structiural.adapter.*;
 import com.aypc.structural.adapter.*;
 
 public class AdapterDemo {
-  public static void main(String[] args) {
-    Shape[] shapes = {new RectangleAdapter(new Rectangle()), new LineAdapter(new Line())};
-    int x1 = 10, y1 = 20;
-    int x2 = 30, y2 = 60;
-    for (Shape shape : shapes) {
-      shape.draw(x1, y1, x2, y2);
-    }
-  }
+   public static void main(String[] args) {
+      Shape[] shapes = {new RectangleAdapter(new Rectangle()), new LineAdapter(new Line())};
+      int x1 = 10, y1 = 20;
+      int x2 = 30, y2 = 60;
+      for (Shape shape : shapes) {
+         shape.draw(x1, y1, x2, y2);
+      }
+   }
 } 
 ```
+
 ----
 
 ### Abstract Factory Method ###
+
 buttons: First __product hierarchy__
 
 buttons/Button.java
@@ -112,7 +139,7 @@ public interface Button {
 ```
 
 buttons/MacOSButton.java
- 
+
 ```java
 /**
  * All products families have the same varieties (MacOS/Windows).
@@ -202,7 +229,8 @@ factories/GUIFactory.java: Abstract factory
  */
 public interface GUIFactory {
     Button createButton();
-    Checkbox createCheckbox();
+
+   Checkbox createCheckbox();
 }
 ```
 
@@ -320,7 +348,8 @@ buttons: Common product interface
  */
 public interface Button {
     void render();
-    void onClick();
+
+   void onClick();
 }
 ```
 
@@ -480,6 +509,7 @@ public class Demo {
     }
 }
 ```
+
 ----
 
 ### Builder ###
@@ -492,11 +522,16 @@ builders/Builder.java: Common builder interface
  */
 public interface Builder {
     void setType(Type type);
-    void setSeats(int seats);
-    void setEngine(Engine engine);
-    void setTransmission(Transmission transmission);
-    void setTripComputer(TripComputer tripComputer);
-    void setGPSNavigator(GPSNavigator gpsNavigator);
+
+   void setSeats(int seats);
+
+   void setEngine(Engine engine);
+
+   void setTransmission(Transmission transmission);
+
+   void setTripComputer(TripComputer tripComputer);
+
+   void setGPSNavigator(GPSNavigator gpsNavigator);
 }
 ```
 
@@ -843,9 +878,9 @@ public class Demo {
         CarManualBuilder manualBuilder = new CarManualBuilder();
 
         // Director may know several building recipes.
-        director.constructSportsCar(manualBuilder);
-        Manual carManual = manualBuilder.getResult();
-        System.out.println("\nCar manual built:\n" + carManual.print());
+       director.constructSportsCar(manualBuilder);
+       Manual carManual = manualBuilder.getResult();
+       System.out.println("\nCar manual built:\n" + carManual.print());
     }
 
 }
@@ -853,7 +888,9 @@ public class Demo {
 
 ----
 
-[Builder vs Abstract Factory](http://rockssdlog.blogspot.hk/2012/05/design-pattern-builder-pattern.html)
+# Discussion of Creational Patterns
+
+## [Builder vs Abstract Factory](http://rockssdlog.blogspot.hk/2012/05/design-pattern-builder-pattern.html)
 
 其中的Director就是負責執行各步驟並產出產品，Builder則確保了其繼承者都會有N個步驟
 
@@ -869,13 +906,25 @@ public class Demo {
 
 ----
 
- ![Object Oriented Design](https://2.bp.blogspot.com/-Rrydpzw_mco/Vo90k2rbcAI/AAAAAAABAlU/dvO7pATGcrU/s1600/OO%2B%25E7%2589%25A9%25E4%25BB%25B6%25E5%25B0%258E%25E5%2590%2591.gif "Object Oriented Design") 
+# Discussion of Structural Patterns
 
- ![equation](https://latex.codecogs.com/gif.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a})
- 
- ![equation](https://latex.codecogs.com/gif.latex?f%28n%29%20=%20a_1 f%28n-1%29+a_2 f%28n-2%29 + %20\dotsm%20 + a_d f%28n-d%29)
- 
- ![formula](https://latex.codecogs.com/gif.latex?f%28n%29%20=%20a_1 f%28n-1%29+a_2 f%28n-2%29 + %20\dotsm%20 + a_d f%28n-d%29)
+## Composition vs Delegation
+
+## Composition vs Delegation vs Aggregation
+
+## Composite vs Decorator vs Proxy
+
+# Discussion of Behavioral Patterns
+
+----
+
+![Object Oriented Design](https://2.bp.blogspot.com/-Rrydpzw_mco/Vo90k2rbcAI/AAAAAAABAlU/dvO7pATGcrU/s1600/OO%2B%25E7%2589%25A9%25E4%25BB%25B6%25E5%25B0%258E%25E5%2590%2591.gif "Object Oriented Design")
+
+![equation](https://latex.codecogs.com/gif.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a})
+
+![equation](https://latex.codecogs.com/gif.latex?f%28n%29%20=%20a_1f%28n-1%29+a_2f%28n-2%29+%20\dotsm%20+a_df%28n-d%29)
+
+![formula](https://latex.codecogs.com/gif.latex?f%28n%29%20=%20a_1f%28n-1%29+a_2f%28n-2%29+%20\dotsm%20+a_df%28n-d%29)
  
 ----
 
@@ -887,8 +936,10 @@ public class Demo {
 
 * item 1
 * item 2
+
 - item 3
 - item 4
+
 + item 5
 + item 6
 
@@ -917,6 +968,7 @@ __粗體__
 
 Weekly Project Progress Report
 ==============================
+
 * Record Date :
 * manager :
 * owner :
@@ -924,24 +976,26 @@ Weekly Project Progress Report
 
 ### A. Goal ###
 ------------------
+
 1. development and deployment
 2. MIS training
 
 ### B. Progress Report ###
 ------------------
+
 1. System Deployment : using Application Server
-...[in detail](http://mropengate.blogspot.tw/)
+   ...[in detail](http://mropengate.blogspot.tw/)
 
 2. MIS training :
- 1. DHCP &amp; DNS Server
- ...[in detail](http://mropengate.blogspot.tw/)
- 2. IDC
- 3. Proximity Access Control System
- * information
+1. DHCP &amp; DNS Server
+   ...[in detail](http://mropengate.blogspot.tw/)
+2. IDC
+3. Proximity Access Control System
+
+* information
 
 ### C. Action Item ###
 ------------------
-
 
 | NumID | Action | Owner | Deadline | status |
 | ---- | ---- | ---- | ---- | ---- |
@@ -960,7 +1014,6 @@ Weekly Project Progress Report
 |   |   |   |   |   |   |
 |   |   |   |   |   |   |
 
- [I'm an inline-style link with title](https://www.google.com "Google's Homepage") 
- 
- 
+[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+
 [![An old rock in the desert](/assets/images/shiprock.jpg "Shiprock, New Mexico by Beau Rogers")](https://www.flickr.com/photos/beaurogers/31833779864/in/photolist-Qv3rFw-34mt9F-a9Cmfy-5Ha3Zi-9msKdv-o3hgjr-hWpUte-4WMsJ1-KUQ8N-deshUb-vssBD-6CQci6-8AFCiD-zsJWT-nNfsgB-dPDwZJ-bn9JGn-5HtSXY-6CUhAL-a4UTXB-ugPum-KUPSo-fBLNm-6CUmpy-4WMsc9-8a7D3T-83KJev-6CQ2bK-nNusHJ-a78rQH-nw3NvT-7aq2qf-8wwBso-3nNceh-ugSKP-4mh4kh-bbeeqH-a7biME-q3PtTf-brFpgb-cg38zw-bXMZc-nJPELD-f58Lmo-bXMYG-bz8AAi-bxNtNT-bXMYi-bXMY6-bXMYv)
