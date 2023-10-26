@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="info">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="[%d{DEFAULT}] [%t-exec-%tid] [%-5level] [line:%L] %logger{36} - %msg%n"/>
+        </Console>
+        <RollingFile name="RollingFile" fileName="log/log4j2.log"
+                     filePattern="log/$${date:yyyy-MM}/log4j2-%d{yyyy-MM-dd}-%i.log">
+            <PatternLayout pattern="[%d{DEFAULT}] [%t-exec-%tid] [%-5level] [line:%L] %logger{36} - %msg%xEx%n"/>
+            <SizeBasedTriggeringPolicy size="10MB"/>
+            <DefaultRolloverStrategy max="20"/>
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <Root level="ALL">
+            <AppenderRef ref="Console"/>
+        </Root>
+        <Logger name="com.aypc" level="DEBUG" additivity="false">
+            <AppenderRef ref="RollingFile"/>
+            <AppenderRef ref="Console"/>
+        </Logger>
+    </Loggers>
+</Configuration>
