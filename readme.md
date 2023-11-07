@@ -87,8 +87,7 @@ Behavioral design patterns are concerned with algorithms and the assignment of r
 
 ### Commonly Used Pattern
 
-Abstract Factory (page 87)
-
++ Abstract Factory (page 87)
 + Adapter (139)
 + Composite (163)
 + Decorator (175)
@@ -908,11 +907,11 @@ public class Demo {
 
 # Discussion of Structural Patterns
 
-## Composition vs Delegation
+## Composition vs Proxy (Delegation)
 
-## Composition vs Delegation vs Aggregation
+## Composition vs Proxy (Delegation) vs Aggregation
 
-## Composite vs Decorator vs Proxy
+## Composite vs Decorator vs Proxy (Delegation)
 
 # Discussion of Behavioral Patterns
 
@@ -997,9 +996,9 @@ Weekly Project Progress Report
 ### C. Action Item ###
 ------------------
 
-| NumID | Action | Owner | Deadline | status |
-| ---- | ---- | ---- | ---- | ---- |
-| NUM | SAMPLE TASK | CHONG | DATE | ONGOING |
+| NumID | Action      | Owner | Deadline | status  |
+|-------|-------------|-------|----------|---------|
+| NUM   | SAMPLE TASK | CHONG | DATE     | ONGOING |
 
 | Tables   |      Are      |  Cool |
 |----------|:-------------:|------:|

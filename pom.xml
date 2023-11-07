@@ -6,12 +6,12 @@
     <version>1.0</version>
     <inceptionYear>May2018</inceptionYear>
     <dependencies>
-        <dependency>
+        <!--<dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>${testng.version}</version>
             <scope>test</scope>
-        </dependency>
+        </dependency>-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -223,6 +223,36 @@
                             <target>${maven.compiler.target}</target>-->
                             <workingDirectory>${project.build.directory}</workingDirectory>
                             <mainClass>com.aypc.structural.adapter.AdapterDemo</mainClass>
+                            <arguments>
+                                <argument>-classpath</argument>
+                                <argument>tom</argument>
+                                <argument>dick</argument>
+                                <argument>jack</argument>
+                            </arguments>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>adapter1</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>${maven-surefire-plugin.version}</version>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>exec-maven-plugin</artifactId>
+                        <version>${exec-maven-plugin.version}</version>
+                        <configuration>
+                            <executable>java</executable>
+                            <!--<source>${maven.compiler.source}</source>
+                            <target>${maven.compiler.target}</target>-->
+                            <workingDirectory>${project.build.directory}</workingDirectory>
+                            <mainClass>com.aypc.structural.adapter1.AdapterDemo</mainClass>
                             <arguments>
                                 <argument>-classpath</argument>
                                 <argument>tom</argument>
@@ -1267,6 +1297,68 @@
                             <target>${maven.compiler.target}</target>-->
                             <workingDirectory>${project.build.directory}</workingDirectory>
                             <mainClass>com.aypc.structural.proxy.ProxyDemo</mainClass>
+                            <arguments>
+                                <argument>second</argument>
+                                <argument>-classpath</argument>
+                                <argument>second</argument>
+                                <argument>dick.jpeg</argument>
+                                <argument>jack</argument>
+                            </arguments>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>proxy1</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>${maven-surefire-plugin.version}</version>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>exec-maven-plugin</artifactId>
+                        <version>${exec-maven-plugin.version}</version>
+                        <configuration>
+                            <executable>java</executable>
+                            <!--<source>${maven.compiler.source}</source>
+                            <target>${maven.compiler.target}</target>-->
+                            <workingDirectory>${project.build.directory}</workingDirectory>
+                            <mainClass>com.aypc.structural.proxy1.ProxyDemo</mainClass>
+                            <arguments>
+                                <argument>second</argument>
+                                <argument>-classpath</argument>
+                                <argument>second</argument>
+                                <argument>dick.jpeg</argument>
+                                <argument>jack</argument>
+                            </arguments>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>proxy2</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>${maven-surefire-plugin.version}</version>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>exec-maven-plugin</artifactId>
+                        <version>${exec-maven-plugin.version}</version>
+                        <configuration>
+                            <executable>java</executable>
+                            <!--<source>${maven.compiler.source}</source>
+                            <target>${maven.compiler.target}</target>-->
+                            <workingDirectory>${project.build.directory}</workingDirectory>
+                            <mainClass>com.aypc.structural.proxy2.ProxyDemo</mainClass>
                             <arguments>
                                 <argument>second</argument>
                                 <argument>-classpath</argument>
