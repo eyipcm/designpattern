@@ -385,6 +385,36 @@
             </build>
         </profile>
         <profile>
+            <id>decorator1</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>${maven-surefire-plugin.version}</version>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>exec-maven-plugin</artifactId>
+                        <version>${exec-maven-plugin.version}</version>
+                        <configuration>
+                            <executable>java</executable>
+                            <!--<source>${maven.compiler.source}</source>
+                            <target>${maven.compiler.target}</target>-->
+                            <workingDirectory>${project.build.directory}</workingDirectory>
+                            <mainClass>com.aypc.structural.decorator1.DecoratorDemo</mainClass>
+                            <arguments>
+                                <argument>-classpath</argument>
+                                <argument>tom.jpeg</argument>
+                                <argument>dick.jpeg</argument>
+                                <argument>jack</argument>
+                            </arguments>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
             <id>composite</id>
             <build>
                 <plugins>
