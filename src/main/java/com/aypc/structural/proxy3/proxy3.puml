@@ -1,0 +1,21 @@
+@startuml
+class  ATMProxy {
+  ATMState getATMData()
+  int getCashInMachine()
+}  
+class  ATMMachine  
+{
+  ATMState getATMData()
+  int getCashInMachine()
+}
+interface  ATMData
+{
+  ATMState getATMData()
+  int getCashInMachine()
+}
+
+client - ATMData 
+ATMData <|.. ATMProxy 
+ATMData <|.. ATMMachine
+ATMProxy --left-> ATMMachine
+@enduml
